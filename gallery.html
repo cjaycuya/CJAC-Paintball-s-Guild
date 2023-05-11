@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	  	<link rel="icon" type="image/x-icon" href="images/favicon.png">
+	  	<!-- <link ref="https://code.jquery.com/jquery-2.2.4.min.js"> -->
+		<!-- Icon Source -->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<title>Gallery - CJAC Paintball's Guild</title>
+	</head>
+	<body>
+		<div class="page-loader">
+			<div>
+				<img class="spinner" src="images/logo.png" width="50%">
+			</div>
+		</div>
+		<!-- Back to the top button -->
+		<a href="#top"><button id="button" title="Go to top">
+			<img src="images/up-arrow.png">
+		</button></a>
+		<header>
+			<div class="banner">
+				<div class="banner-container">
+					<div class="loc-phone">
+					  <div class="banner-info">
+					  	<i class="fa fa-map-marker"></i>
+					  	<a href="https://www.google.com/maps/search/22+Rizal+St,+Brgy+Barretto+Olongapo+City/@14.8497799,120.2650007,19z?hl=en">22 Rizal St, Brgy Barreto Olongapo City</a>
+					  </div>
+					  <div class="banner-info">
+					  	<i class="fa fa-phone"></i>
+					  	<a href="tel:09763498472">09763498472</a>
+					  </div>
+					</div>
+					<div class="socmeds">
+					  <div class="socmed-icons">
+					  	<a href="https://www.facebook.com/christianjay.cuya.90"><i class="fa fa-facebook-f" style="font-size:18px;"></i></a>
+					  	<a href="https://www.facebook.com/christianjay.cuya.90"><i class="fa fa-instagram"></i></a>
+					  	<a href="https://www.facebook.com/christianjay.cuya.90"><i class="fa fa-twitter"></i></a>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="navbar" id="navbar">
+	            <div class="hamburger-menu"onclick="openNav()">
+	            	<i class="fa fa-bars" id="hamburgerButton"></i>
+	            </div>
+				<div class="logo-header" id="logo-header">
+					<a href="index.html"><img class="logo" src="images/logo.png"></a>
+				</div>
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="pricing.html" class="nav-link">Pricing</a>
+					</li>
+					<li class="nav-item">
+						<a href="paintball.html" class="nav-link">Paintball</a>
+					</li>
+					<li class="nav-item">
+						<a href="events.html" class="nav-link">Events</a>
+					</li>
+					<li class="nav-item">
+						<a href="gallery.html" class="nav-link active">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a href="waiver.html" class="nav-link">Waiver</a>
+					</li>
+				</ul>
+				<div class="button">
+					<a href="book-now.html" class="nav-link-button">Book Now</a>
+				</div>
+				<div id="myNav" class="overlay">
+				  <!-- Button to close the overlay navigation -->
+				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				  <!-- Overlay content -->
+				  <div class="overlay-content">
+				    <ul class="overlay-menu">
+						<li class="nav-item-mobile">
+							<a href="index.html" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item-mobile">
+							<a href="pricing.html" class="nav-link">Pricing</a>
+						</li>
+						<li class="nav-item-mobile">
+							<a href="paintball.html" class="nav-link">Paintball</a>
+						</li>
+						<li class="nav-item-mobile">
+							<a href="events.html" class="nav-link">Events</a>
+						</li>
+						<li class="nav-item-mobile">
+							<a href="gallery.html" class="nav-link active">Gallery</a>
+						</li>
+						<li class="nav-item-mobile">
+							<a href="waiver.html" class="nav-link">Waiver</a>
+						</li>
+					</ul>
+				  </div>
+				</div>
+			</div>
+		</header>
+		<div class="hero-container-gallery">
+			<div class="hero-row-gallery">
+				<div class="hero-info-gallery">
+					<h1 class="hero-title">Gallery</h1>
+				</div>
+			</div>
+		</div>
+		<div class="gallery-container">
+			<div class="row-section-gallery">
+				<div class="gal-image reveal">
+					<img src="images/counter-bg.jpg" onclick="onClick(this)"/>
+				</div>
+				<div class="gal-image reveal">
+					<img src="images/games-ycp.jpg" onclick="onClick(this)"/>
+				</div>
+				<div class="gal-image reveal">
+					<img src="images/men-playing.jpg" onclick="onClick(this)"/>
+				</div>
+				<div class="gal-image reveal">
+					<img src="images/what-is-paintball.jpg" onclick="onClick(this)"/>
+				</div>
+				<div class="gal-image reveal">
+					<img src="images/image-1.jpg" onclick="onClick(this)"/>
+				</div>
+				<div class="gal-image reveal">
+					<img src="images/image-2.jpg" onclick="onClick(this)"/>
+				</div>
+				<div class="gal-image reveal">
+					<img src="images/image-3.jpg" onclick="onClick(this)"/>
+				</div>
+				<div class="gal-image reveal">
+					<img src="images/footer bg.jpg" onclick="onClick(this)"/>
+				</div>
+				<div id="modal01" class="modal" onclick="this.style.display='none'">
+				  <span class="close-img-button">&times;</span>
+				  <div class="modal-content animate-zoom">
+				    <img id="img01" style="width:100%">
+				    <br><br><br>
+				  </div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="footer-container">
+				<div class="link-footer">
+					<div class="logo-container">
+						<img class="logo-footer" src="images/logo.png"/>
+					</div>
+					<div></div> <!-- THIS DIV IS FOR EMPTY COLUMN IN TABLET RESPONSIVE -->
+					<div class="links">
+						<h2>Quick Links</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="pricing.html">Pricing</a></li>
+							<li><a href="paintball.html">Paintball</a></li>
+							<li><a href="events.html">Events</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="waiver.html">Waiver</a></li>
+							<li><a href="book-now.html">Book Now</a></li>
+						</ul>
+			        </div>
+					<div class="links">
+			            <h2>Working Hours</h2>
+						<ul>
+							<li><span><i class="fa fa-calendar"></i>Monday - Saturday</span></li>
+							<li><span><i class="fa fa-clock"></i>9:00 am - 5:00 pm</span></li>
+							<li><span><i class="fa fa-calendar"></i>We are closed on Monday Temporarily</span></li>
+						</ul>
+			        </div>
+					<div class="links">
+			            <h2>Get in Touch!</h2>
+						<ul>
+							<li><a href="https://www.google.com/maps/search/22+Rizal+St.+Brgy+Barretto+Olongapo+City/@14.8511492,120.2609574,17z"><i class="fa fa-map-marker"></i>22 Rizal St. Brgy Barreto Olongapo City</a></li>
+							<li><a href="tel:09763498472"><i class="fa fa-phone"></i>09763498472 - Call or text!</a></li>
+							<li><a href="mailto:cjapaycuya16@gmail.com"><i class="fa fa-envelope"></i>cjapaycuya16@gmail.com</a></li>
+						</ul>
+						<div class="socmed-icons-footer">
+							<ul class="icons">
+								<li>
+									<a href="https://www.facebook.com/christianjay.cuya.90">
+										<i class="fa fa-facebook-f" style="font-size:24px;"></i>
+									</a>
+								</li>
+								<li>
+				  					<a href="https://www.instagram.com/cjaycuya/">
+				  						<i class="fa fa-instagram" style="font-size:24px;"></i>
+				  					</a>
+				  				</li>
+								<li>
+				  					<a href="https://twitter.com/ChristianJayAC3">
+				  						<i class="fa fa-twitter" style="font-size:24px;"></i>
+				  					</a>
+				  				</li>
+							</ul>
+						</div>
+			        </div>
+				</div>
+			</div>
+	     	<div class="bottom-container">
+	     		<div class="legal">
+		            <span>© <span id="time"> </span> All rights reserved </span>
+		        </div>
+	     	</div>
+		</footer>
+	</body>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/scroll-to-the-top-function.js"></script>
+</html>
